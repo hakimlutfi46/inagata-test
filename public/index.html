@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../src/output.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
   <body class="font-sans px-20">
     <nav class="h-full flex items-center justify-between py-5">
@@ -28,6 +34,7 @@
       </div>
     </nav>
 
+    <!-- Home -->
     <section class="flex flex-row justify-between items-start my-20">
       <div class="flex flex-col items-start justify-center w-1/2 pr-4 mt-10">
         <h1 class="font-extrabold text-6xl leading-snug">
@@ -53,6 +60,7 @@
       </div>
     </section>
 
+    <!-- Keunggulan -->
     <section class="flex flex-col p-10 rounded-2xl shadow-lg border-gray-500">
       <div class="w-full mb-10">
         <h1 class="font-extrabold text-center text-4xl text-blue-black">
@@ -85,7 +93,8 @@
       </div>
     </section>
 
-    <section class="w-full h-auto mt-50">
+    <!-- Tentang -->
+    <section class="w-full h-auto my-50">
       <div class="flex flex-row items-start justify-between gap-x-10 gap-y-5">
         <div class="flex flex-col items-start w-1/2 pr-8">
           <h1 class="heading-xl">Tentang Kami</h1>
@@ -106,17 +115,18 @@
       </div>
     </section>
 
-    <section class="flex flex-col mt-20">
+    <!-- Artikel -->
+    <section class="flex flex-col my-50 items-center">
       <h1 class="heading-xl text-center">Artikel</h1>
       <h2 class="subheading text-center">Artikel terbaru seputar pendidikan</h2>
 
-      <div class="flex flex-row items-center justify-between">
-        <div class="flex flex-col mt-10">
+      <div class="flex flex-row items-center justify-between mt-10">
+        <div class="flex flex-col">
           <img
             src="./images/artikel_img.png"
             alt="artikel_img"
             class="max-w-md h-auto" />
-          <p class="inline-block bg-[#EFE5FF] text-primary px-5 py-2">
+          <p class="mt-5 inline-block bg-[#EFE5FF] text-primary px-5 py-2">
             12 Desember 2021
           </p>
           <h3 class="font-bold custom-size mt-4">
@@ -129,12 +139,12 @@
           </p>
         </div>
 
-        <div class="flex flex-col mt-10">
+        <div class="flex flex-col mx-10">
           <img
             src="./images/artikel_img.png"
             alt="artikel_img"
             class="max-w-md h-auto" />
-          <p class="inline-block bg-[#EFE5FF] text-primary px-5 py-2">
+          <p class="mt-5 inline-block bg-[#EFE5FF] text-primary px-5 py-2">
             12 Desember 2021
           </p>
           <h3 class="font-bold custom-size mt-4">
@@ -147,12 +157,12 @@
           </p>
         </div>
 
-        <div class="flex flex-col mt-10">
+        <div class="flex flex-col">
           <img
             src="./images/artikel_img.png"
             alt="artikel_img"
             class="max-w-md h-auto" />
-          <p class="inline-block bg-[#EFE5FF] text-primary px-5 py-2">
+          <p class="mt-5 inline-block bg-[#EFE5FF] text-primary px-5 py-2">
             12 Desember 2021
           </p>
           <h3 class="font-bold custom-size mt-4">
@@ -167,6 +177,61 @@
       </div>
     </section>
 
-    <section class=""></section>
+    <!-- Galeri -->
+    <section class="my-50 w-full h-auto">
+      <div class="flex flex-row justify-between items-center">
+        <h1 class="heading-xl">Galeri Sekolah</h1>
+        <a href="#" class="text-primary text-2xl font-semibold"
+          >Lihat Semua ></a
+        >
+      </div>
+
+      <div class="flex flex-row items-center justify-between mt-10">
+        <div class="flex flex-col">
+          <img
+            src="./images/galery1.png"
+            alt="artikel_img"
+            class="max-w-md h-auto rounded-t-2xl" />
+          <div
+            class="bg-[#6950bb] flex flex-row items-center justify-between px-5 py-5 text-2xl rounded-b-2xl font-semibold">
+            <p class="text-white">Belajar Mengajar</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="flex flex-col mx-10">
+          <img
+            src="./images/galery2.png"
+            alt="artikel_img"
+            class="max-w-md h-auto rounded-t-2xl" />
+          <div
+            class="bg-[#f9bb50] flex flex-row items-center justify-between px-5 py-5 text-2xl rounded-b-2xl font-semibold">
+            <p class="text-white">Sharing Session</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <img
+            src="./images/galery3.png"
+            alt="artikel_img"
+            class="max-w-md h-auto rounded-t-2xl" />
+          <div
+            class="bg-[#ed69cf] flex flex-row items-center justify-between px-5 py-5 text-2xl rounded-b-2xl font-semibold">
+            <p class="text-white">Kelulusan</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+  <footer class="w-full bg-[#1c2661]">
+    <p class="text-white">Ini Footer</p>
+  </footer>
 </html>

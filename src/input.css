@@ -14,7 +14,7 @@
 }
 
 .heading-xl {
-  @apply font-extrabold text-5xl;
+  @apply font-extrabold text-4xl;
 }
 
 .subheading {
