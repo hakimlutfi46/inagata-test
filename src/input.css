@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../public/assets/fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@theme {
+  --color-primary: #642abb;
+  --color-magenta: #f73ecf;
+  --color-blue-black: #1c2661;
+}
+
+.heading-xl {
+  @apply font-extrabold text-5xl;
+}
+
+.subheading {
+  @apply text-2xl;
+}
+
+.custom-size {
+  @apply text-[1.375rem] leading-relaxed;
+}
