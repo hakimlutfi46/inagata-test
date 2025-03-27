@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <nav
+      class="h-full flex items-center justify-between py-5 px-4 sm:px-8 md:px-10">
+      <div class="image-wrapper">
+        <img
+          src="./images/Vector.png"
+          alt="nav-img"
+          class="w-20 sm:w-24 md:w-auto" />
+      </div>
+
+      <div class="hidden sm:flex space-x-4 md:space-x-7">
+        <a href="index.html" class="hover:text-primary">Beranda</a>
+        <a href="about.html" class="hover:text-primary">Tentang</a>
+        <a href="galeri.html" class="hover:text-primary">Galeri</a>
+        <a href="artikel.html" class="hover:text-primary">Artikel</a>
+        <a href="kontak.html" class="text-primary font-bold">Kontak</a>
+      </div>
+
+      <div>
+        <a
+          href="#"
+          class="border-2 border-black px-3 py-1 sm:px-5 sm:py-2 rounded-full hover:bg-black hover:text-white text-sm sm:text-base"
+          >PPDB</a
+        >
+      </div>
+
+      <div class="sm:hidden">
+        <button id="menu-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- hiden nav -->
+    <div
+      id="mobile-menu"
+      class="hidden sm:hidden bg-white absolute top-0 left-0 w-full shadow-md z-10">
+      <div class="flex justify-between items-center p-4">
+        <div class="font-bold text-xl">Menu</div>
+        <button id="close-menu" class="text-xl">X</button>
+      </div>
+      <div class="flex flex-col items-center py-4">
+        <a href="index.html" class="hover:text-primary py-2">Beranda</a>
+        <a href="about.html" class="hover:text-primary py-2">Tentang</a>
+        <a href="galeri.html" class="hover:text-primary py-2">Galeri</a>
+        <a href="artikel.html" class="hover:text-primary py-2">Artikel</a>
+        <a href="kontak.html" class="text-primary font-bold py-2">Kontak</a>
+      </div>
+    </div>
+
+    <section
+      class="flex flex-col justify-between md:flex-row items-center my-20 w-full">
+      <div class="flex flex-col items-start justify-center md:w-1/2 pr-4 mt-1">
+        <h1 class="font-extrabold text-5xl md:text-[56px] leading-snug">
+          Kontak
+        </h1>
+        <p class="mt-2 text-[20px]">
+          Hubungi kami untuk mendapatkan informasi lebih lengkap dan jawaban
+          atas pertanyaan anda
+        </p>
+      </div>
+
+      <div class="flex flex-col items-end justify-start md:w-1/2">
+        <img
+          src="./images/kontak_hero.png"
+          alt="img"
+          class="max-w-full h-auto"
+          style="max-height: 500px" />
+      </div>
+    </section>
+
+    <section class="my-40">
+      <div class="flex flex-col shadow-round rounded-2xl p-12">
+        <h1 class="heading-xl w-full text-center text-blue-black mb-20">
+          Kontak Kami
+        </h1>
+        <div class="flex flex-col lg:flex-row gap-10">
+          <!-- Bagian Kiri: Informasi Kontak -->
+          <div class="flex flex-col w-full lg:w-1/2 items-start gap-y-20 mb-10">
+            <div class="flex gap-10">
+              <img src="./images/call_icon.png" alt="" class="size-20" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl md:text-2xl">(+62) 812 698 15172</h3>
+                <h3 class="text-xl md:text-2xl">(0341) 545 987</h3>
+              </div>
+            </div>
+            <div class="flex gap-10">
+              <img src="./images/email_icon.png" alt="" class="size-20" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl md:text-2xl">contact@sekolahanak.com</h3>
+                <h3 class="text-xl md:text-2xl">info@sekolah.anak.com</h3>
+              </div>
+            </div>
+            <div class="flex gap-10">
+              <img src="./images/location_icon.png" alt="" class="size-20" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl md:text-2xl">Jl. Soekarno Hatta J-12</h3>
+                <h3 class="text-xl md:text-2xl">Malang</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bagian Kanan: Formulir Kontak -->
+          <div class="w-full lg:w-1/2">
+            <form action="#" method="POST" class="flex flex-col gap-4">
+              <input
+                type="text"
+                placeholder="Nama Anda*"
+                class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required />
+
+              <input
+                type="email"
+                placeholder="Email Anda*"
+                class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required />
+
+              <input
+                type="tel"
+                placeholder="Nomor Telepon"
+                class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+              <textarea
+                placeholder="Pesan Anda*"
+                class="border border-gray-300 rounded-lg p-3 w-full h-32 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required></textarea>
+
+              <button
+                type="submit"
+                class="bg-magenta text-white text-lg font-semibold py-3 rounded-full w-full hover:bg-pink-400 transition">
+                Kirim Pesan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="flex flex-col bg-secondary p-8 md:p-20">
+      <div class="flex flex-col md:flex-row w-full">
+        <div class="flex-1 mb-8 md:mb-0">
+          <div class="flex flex-col">
+            <img
+              src="./images/Vector.png"
+              alt="Vector"
+              class="w-24 md:w-35 h-auto" />
+            <p class="mt-4 md:mt-6 w-full md:w-80 text-sm md:text-base">
+              Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami,
+              untuk kehidupan yang lebih bermanfaat
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-1 flex flex-wrap justify-between">
+          <div class="w-full md:w-auto mb-6 md:mb-0">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Informasi
+              </h3>
+              <a href="" class="text-sm md:text-base">Artikel</a>
+              <a href="" class="text-sm md:text-base">Galeri</a>
+            </div>
+          </div>
+          <div class="w-full md:w-auto mb-6 md:mb-0">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Tentang
+              </h3>
+              <a href="" class="text-sm md:text-base">Tentang Kami</a>
+              <a href="" class="text-sm md:text-base">Hubungi Kami</a>
+            </div>
+          </div>
+          <div class="w-full md:w-auto">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Ikuti Kami
+              </h3>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-facebook"></ion-icon>
+                namasekolah
+              </a>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-linkedin"></ion-icon>
+                namasekolah
+              </a>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-instagram"></ion-icon>
+                namasekolah
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script/script.js"></script>
+</html>
