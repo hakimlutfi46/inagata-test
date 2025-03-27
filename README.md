@@ -32,22 +32,8 @@ npm install
 ### 3. Build Tailwind CSS
 Jalankan perintah berikut untuk mengompilasi Tailwind CSS:
 ```
-npx tailwindcss -i ./src/input.css -o ./public/output.css --watch
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
 
 ### 4. Jalankan Secara Lokal
 Buka file `public/index.html` langsung di browser atau gunakan ekstensi **Live Server** di VS Code.
-
-## Deployment ke GitHub Pages
-1. Build CSS sebelum push:
-   ```
-   npx tailwindcss -i ./src/input.css -o ./public/output.css --minify
-   ```
-2. Commit dan push perubahan:
-   ```
-   git add .
-   git commit -m "Update build CSS"
-   git push origin main
-   ```
-
-Setelah push selesai, GitHub Pages akan otomatis memperbarui website dalam beberapa menit.
