@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <nav
+      class="h-full flex items-center justify-between py-5 px-4 sm:px-8 md:px-10">
+      <div class="image-wrapper">
+        <img
+          src="./images/Vector.png"
+          alt="nav-img"
+          class="w-20 sm:w-24 md:w-auto" />
+      </div>
+
+      <div class="hidden sm:flex space-x-4 md:space-x-7">
+        <a href="index.html" class="hover:text-primary">Beranda</a>
+        <a href="about.html" class="text-primary font-bold">Tentang</a>
+        <a href="galeri.html" class="hover:text-primary">Galeri</a>
+        <a href="artikel.html" class="hover:text-primary">Artikel</a>
+        <a href="kontak.html" class="hover:text-primary">Kontak</a>
+      </div>
+
+      <div>
+        <a
+          href="#"
+          class="border-2 border-black px-3 py-1 sm:px-5 sm:py-2 rounded-full hover:bg-black hover:text-white text-sm sm:text-base"
+          >PPDB</a
+        >
+      </div>
+
+      <div class="sm:hidden">
+        <button id="menu-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- hiden nav -->
+    <div
+      id="mobile-menu"
+      class="hidden sm:hidden bg-white absolute top-0 left-0 w-full shadow-md z-10">
+      <div class="flex justify-between items-center p-4">
+        <div class="font-bold text-xl">Menu</div>
+        <button id="close-menu" class="text-xl">X</button>
+      </div>
+      <div class="flex flex-col items-center py-4">
+        <a href="index.html" class="hover:text-primary py-2">Beranda</a>
+        <a href="about.html" class="text-primary font-bold py-2">Tentang</a>
+        <a href="galeri.html" class="hover:text-primary py-2">Galeri</a>
+        <a href="artikel.html" class="hover:text-primary py-2">Artikel</a>
+        <a href="kontak.html" class="hover:text-primary py-2">Kontak</a>
+      </div>
+    </div>
+
+    <!-- Hero About -->
+    <section
+      class="flex flex-col justify-between md:flex-row items-start my-20 w-full">
+      <div class="flex flex-col items-start justify-center md:w-1/2 pr-4 mt-1">
+        <h1 class="font-extrabold text-5xl md:text-[56px] leading-snug">
+          Sekolah Informal Insan Muda Berkarya
+        </h1>
+        <p class="mt-2 text-[20px]">
+          Profil sekolah kami dan beberapa info penting lainnya tentang sekolah
+          ini agar anda lebih yakin dan mengerti.
+        </p>
+        <a
+          href="#"
+          class="my-10 font-bold bg-magenta py-3 px-9 rounded-full text-white inline-block text-md hover:bg-[#E233B9]">
+          Daftar Sekarang
+        </a>
+      </div>
+
+      <div class="flex flex-col items-end justify-start md:w-1/2">
+        <img
+          src="./images/hero_about.png"
+          alt="img"
+          class="max-w-full h-auto"
+          style="max-height: 500px" />
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="flex flex-col p-10 rounded-2xl shadow-lg border-gray-500 text-center font-semibold text-2xl mt-4 text-blue-black">
+        <div class="w-full mb-10">
+          <h1 class="heading-xl text-blue-black">Profil Singkat</h1>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <img
+            src="./images/section2_about.png"
+            alt=""
+            class="h-auto hidden lg:block lg:w-1/4" />
+          <p class="subheading-sm text-justify w-full lg:w-3/4">
+            Sekolah Kami merupakan sekolah informal yang dikelola untuk membantu
+            anak mengembangkan bakat dan kemampuannya. Dengan memberikan
+            kurikulum terbaik agar anak bisa memilih minat nya dan fokus
+            mengembangkan minat tersebut. Sekolah ini didirikan sejak tahun 1989
+            dan terus berkembang hingga saat ini. berlokasikan di jl.
+            SoekarnoHatta Blok J No. 245, Lowokwaru, Blimbing, Kota Malang.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- keunggulan -->
+    <section class="my-40">
+      <div class="flex flex-col md:flex-row items-start md:items-center">
+        <div class="heading-xl lg:w-1/2">
+          <h1 class="mb-10">Keunggulan Sekolah Kami</h1>
+        </div>
+
+        <div class="flex flex-col w-full lg:w-1/2 items-start gap-y-10">
+          <div class="flex gap-10">
+            <img src="./images/icon1.png" alt="" class="size-20" />
+            <div class="flex flex-col gap-2">
+              <h3 class="subheading-md">Menggunakan kurikulum terbaru</h3>
+              <p class="subheading-sm">
+                Menerapkan kurikulum terbaru pada proses belajar mengajar
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-10">
+            <img src="./images/icon2.png" alt="" class="size-20" />
+            <div class="flex flex-col gap-2">
+              <h3 class="subheading-md">
+                Efektifitas Waktu Saat Belajar Disekolah
+              </h3>
+              <p class="subheading-sm">
+                Waktu belajar yang dirancang agar para siswa tidak jenuh
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-10">
+            <img src="./images/icon3.png" alt="" class="size-20" />
+            <div class="flex flex-col gap-2">
+              <h3 class="subheading-md">Penyaluran Bakat dan Minat Siswa</h3>
+              <p class="subheading-sm">
+                Berbagai macam kegitan akademik maupun non akademik
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-40">
+      <div class="flex flex-col w-full text-center">
+        <h1 class="heading-xl text-blue-black">Video Profile</h1>
+        <h2 class="subheading mb-5">Cuplikan Sekolah</h2>
+        <img src="./images/cuplikan_about.png" alt="" class="h-auto w-full" />
+      </div>
+    </section>
+
+    <section class="w-full h-auto my-40">
+      <div class="flex flex-col">
+        <div class="flex flex-row justify-between items-center">
+          <h1 class="heading-xl">Galeri Sekolah</h1>
+          <a
+            href="#"
+            class="flex text-primary text-[20px] md:text-[24px] font-semibold"
+            >Lihat Semua ></a
+          >
+        </div>
+
+        <!-- card list -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+          <div class="flex flex-col">
+            <img
+              src="./images/galery1.png"
+              alt="artikel_img"
+              class="h-auto rounded-t-2xl" />
+            <div
+              class="bg-[#6950bb] flex flex-row items-center justify-between px-5 py-5 text-2xl rounded-b-2xl font-semibold">
+              <p class="text-white">Belajar Mengajar</p>
+              <ion-icon
+                class="text-white"
+                name="arrow-forward-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <img
+              src="./images/galery2.png"
+              alt="artikel_img"
+              class="h-auto rounded-t-2xl" />
+            <div
+              class="bg-[#f9bb50] flex flex-row items-center justify-between px-5 py-5 text-2xl rounded-b-2xl font-semibold">
+              <p class="text-white">Sharing Session</p>
+              <ion-icon
+                class="text-white"
+                name="arrow-forward-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <img
+              src="./images/galery3.png"
+              alt="artikel_img"
+              class="h-auto rounded-t-2xl" />
+            <div
+              class="bg-[#ed69cf] flex flex-row items-center justify-between px-5 py-5 text-2xl rounded-b-2xl font-semibold">
+              <p class="text-white">Kelulusan</p>
+              <ion-icon
+                class="text-white"
+                name="arrow-forward-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="flex flex-col bg-secondary p-8 md:p-20">
+      <div class="flex flex-col md:flex-row w-full">
+        <div class="flex-1 mb-8 md:mb-0">
+          <div class="flex flex-col">
+            <img
+              src="./images/Vector.png"
+              alt="Vector"
+              class="w-24 md:w-35 h-auto" />
+            <p class="mt-4 md:mt-6 w-full md:w-80 text-sm md:text-base">
+              Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami,
+              untuk kehidupan yang lebih bermanfaat
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-1 flex flex-wrap justify-between">
+          <div class="w-full md:w-auto mb-6 md:mb-0">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Informasi
+              </h3>
+              <a href="" class="text-sm md:text-base">Artikel</a>
+              <a href="" class="text-sm md:text-base">Galeri</a>
+            </div>
+          </div>
+          <div class="w-full md:w-auto mb-6 md:mb-0">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Tentang
+              </h3>
+              <a href="" class="text-sm md:text-base">Tentang Kami</a>
+              <a href="" class="text-sm md:text-base">Hubungi Kami</a>
+            </div>
+          </div>
+          <div class="w-full md:w-auto">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Ikuti Kami
+              </h3>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-facebook"></ion-icon>
+                namasekolah
+              </a>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-linkedin"></ion-icon>
+                namasekolah
+              </a>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-instagram"></ion-icon>
+                namasekolah
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script/script.js"></script>
+</html>
