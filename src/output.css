@@ -28,8 +28,6 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -382,14 +380,8 @@
   .my-40 {
     margin-block: calc(var(--spacing) * 40);
   }
-  .my-50 {
-    margin-block: calc(var(--spacing) * 50);
-  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
-  }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
@@ -548,9 +540,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -964,12 +953,6 @@
   }
   .justify-items-stretch {
     justify-items: stretch;
-  }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
-  }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -1552,10 +1535,6 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -1574,9 +1553,6 @@
   .text-\[16px\] {
     font-size: 16px;
   }
-  .text-\[18px\] {
-    font-size: 18px;
-  }
   .text-\[20px\] {
     font-size: 20px;
   }
@@ -1587,17 +1563,9 @@
     --tw-leading: 1;
     line-height: 1;
   }
-  .leading-snug {
-    --tw-leading: var(--leading-snug);
-    line-height: var(--leading-snug);
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .font-extrabold {
-    --tw-font-weight: var(--font-weight-extrabold);
-    font-weight: var(--font-weight-extrabold);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -2292,11 +2260,6 @@
       align-items: center;
     }
   }
-  .md\:gap-2 {
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 2);
-    }
-  }
   .md\:gap-10 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 10);
@@ -2341,11 +2304,6 @@
   .md\:text-\[24px\] {
     @media (width >= 48rem) {
       font-size: 24px;
-    }
-  }
-  .md\:text-\[56px\] {
-    @media (width >= 48rem) {
-      font-size: 56px;
     }
   }
   .lg\:block {
