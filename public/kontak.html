@@ -74,10 +74,8 @@
     <section
       class="flex flex-col justify-between md:flex-row items-center my-20 w-full">
       <div class="flex flex-col items-start justify-center md:w-1/2 pr-4 mt-1">
-        <h1 class="font-extrabold text-5xl md:text-[56px] leading-snug">
-          Kontak
-        </h1>
-        <p class="mt-2 text-[20px]">
+        <h1 class="hero-title">Kontak</h1>
+        <p class="hero-subtitle">
           Hubungi kami untuk mendapatkan informasi lebih lengkap dan jawaban
           atas pertanyaan anda
         </p>
@@ -92,38 +90,46 @@
       </div>
     </section>
 
-    <section class="my-40">
+    <section class="my-40 hidden md:block">
       <div class="flex flex-col shadow-round rounded-2xl p-12">
-        <h1 class="heading-xl w-full text-center text-blue-black mb-20">
+        <h1
+          class="text-3xl font-bold md:heading-xl w-full text-center text-blue-black mb-20">
           Kontak Kami
         </h1>
         <div class="flex flex-col lg:flex-row gap-10">
-          <!-- Bagian Kiri: Informasi Kontak -->
           <div class="flex flex-col w-full lg:w-1/2 items-start gap-y-20 mb-10">
-            <div class="flex gap-10">
-              <img src="./images/call_icon.png" alt="" class="size-20" />
+            <div class="flex gap-5 md:gap-10">
+              <img
+                src="./images/call_icon.png"
+                alt=""
+                class="size-10 md:size-20" />
               <div class="flex flex-col gap-2">
-                <h3 class="text-xl md:text-2xl">(+62) 812 698 15172</h3>
-                <h3 class="text-xl md:text-2xl">(0341) 545 987</h3>
+                <h3 class="text-[16px] md:text-2xl">(+62) 812 698 15172</h3>
+                <h3 class="text-[16px] md:text-2xl">(0341) 545 987</h3>
               </div>
             </div>
-            <div class="flex gap-10">
-              <img src="./images/email_icon.png" alt="" class="size-20" />
+            <div class="flex gap-5 md:gap-10">
+              <img
+                src="./images/email_icon.png"
+                alt=""
+                class="size-10 md:size-20" />
               <div class="flex flex-col gap-2">
-                <h3 class="text-xl md:text-2xl">contact@sekolahanak.com</h3>
-                <h3 class="text-xl md:text-2xl">info@sekolah.anak.com</h3>
+                <h3 class="text-[16px] md:text-2xl">contact@sekolahanak.com</h3>
+                <h3 class="text-[16px] md:text-2xl">info@sekolah.anak.com</h3>
               </div>
             </div>
-            <div class="flex gap-10">
-              <img src="./images/location_icon.png" alt="" class="size-20" />
+            <div class="flex gap-5 md:gap-10">
+              <img
+                src="./images/location_icon.png"
+                alt=""
+                class="size-10 md:size-20" />
               <div class="flex flex-col gap-2">
-                <h3 class="text-xl md:text-2xl">Jl. Soekarno Hatta J-12</h3>
-                <h3 class="text-xl md:text-2xl">Malang</h3>
+                <h3 class="text-[16px] md:text-2xl">Jl. Soekarno Hatta J-12</h3>
+                <h3 class="text-[16px] md:text-2xl">Malang</h3>
               </div>
             </div>
           </div>
 
-          <!-- Bagian Kanan: Formulir Kontak -->
           <div class="w-full lg:w-1/2">
             <form action="#" method="POST" class="flex flex-col gap-4">
               <input
@@ -156,6 +162,68 @@
             </form>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="my-40 md:hidden">
+      <h1
+        class="text-3xl font-bold md:heading-xl w-full text-center text-blue-black mb-10">
+        Kontak Kami
+      </h1>
+      <div class="flex flex-col gap-10">
+        <div class="flex flex-col gap-y-10">
+          <div class="flex gap-5">
+            <img src="./images/call_icon.png" alt="" class="size-10" />
+            <div class="flex flex-col gap-2">
+              <h3 class="text-[16px]">(+62) 812 698 15172</h3>
+              <h3 class="text-[16px]">(0341) 545 987</h3>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <img src="./images/email_icon.png" alt="" class="size-10" />
+            <div class="flex flex-col gap-2">
+              <h3 class="text-[16px]">contact@sekolahanak.com</h3>
+              <h3 class="text-[16px]">info@sekolah.anak.com</h3>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <img src="./images/location_icon.png" alt="" class="size-10" />
+            <div class="flex flex-col gap-2">
+              <h3 class="text-[16px]">Jl. Soekarno Hatta J-12</h3>
+              <h3 class="text-[16px]">Malang</h3>
+            </div>
+          </div>
+        </div>
+
+        <form action="#" method="POST" class="flex flex-col gap-4">
+          <input
+            type="text"
+            placeholder="Nama Anda*"
+            class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required />
+
+          <input
+            type="email"
+            placeholder="Email Anda*"
+            class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required />
+
+          <input
+            type="tel"
+            placeholder="Nomor Telepon"
+            class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+          <textarea
+            placeholder="Pesan Anda*"
+            class="border border-gray-300 rounded-lg p-3 w-full h-32 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required></textarea>
+
+          <button
+            type="submit"
+            class="bg-magenta text-white text-lg font-semibold py-3 rounded-full w-full hover:bg-pink-400 transition">
+            Kirim Pesan
+          </button>
+        </form>
       </div>
     </section>
 

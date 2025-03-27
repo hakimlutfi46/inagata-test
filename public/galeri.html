@@ -74,10 +74,8 @@
     <section
       class="flex flex-col justify-between md:flex-row items-center my-20 w-full">
       <div class="flex flex-col items-start justify-center md:w-1/2 pr-4 mt-1">
-        <h1 class="font-extrabold text-5xl md:text-[56px] leading-snug">
-          Galeri
-        </h1>
-        <p class="mt-2 text-[20px]">
+        <h1 class="hero-title">Galeri</h1>
+        <p class="hero-subtitle">
           Beberapa dokumentasi area sekolah dan kegiatan-kegiatan yang diadakan
           sekolah
         </p>
@@ -92,97 +90,166 @@
       </div>
     </section>
 
-    <section class="my-40">
+    <section class="my-40 hidden md:block">
       <div class="flex flex-col p-10 rounded-2xl shadow-round">
-        <h1 class="heading-xl text-center text-blue-black w-full">
+        <h1 class="text-3xl font-bold md:heading-xl text-center text-blue-black w-full">
           Dokumentasi Sekolah
         </h1>
 
-        <!-- card list -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20 mt-10">
-          <div class="flex flex-col">
-            <img src="./images/kelas.png" alt="" class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Ruang Kelas</h3>
-            <p>Ruangan yang digunakan untuk proses belajar mengajar</p>
-          </div>
-          <div class="flex flex-col">
-            <img src="./images/halaman.png" alt="" class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Halaman Sekolah</h3>
-            <p>Halaman tempat siswa dapat bermain dan berkumpul</p>
-          </div>
-          <div class="flex flex-col">
-            <img src="./images/lorong.png" alt="" class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Lorong Sekolah</h3>
-            <p>Lorong sekolah sebagai jalan penghubung antar kelas</p>
-          </div>
-          <div class="flex flex-col">
-            <img src="./images/belajar.png" alt="" class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Belajar Mengajar</h3>
-            <p>Kegiatan belajar mengajar yang dilakukan di dalam kelas</p>
-          </div>
-          <div class="flex flex-col">
-            <img src="./images/kelas_inggris.png" alt="" class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Kelas Bahasa Inggris</h3>
-            <p>
-              Kelas bahasa inggris agar siswa bisa lebih fasih berbahasa inggris
-            </p>
-          </div>
-          <div class="flex flex-col">
-            <img src="./images/karya_murid.png" alt="" class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Karya Murid</h3>
-            <p>
-              Hasil karya murid dari kelas prakarya yang dikerjakan secara
-              individu dan kelompok
-            </p>
-          </div>
-          <div class="flex flex-col">
-            <img src="./images/tarik tambang.png" alt="" class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Lomba Tarik Tambang</h3>
-            <p>Kegiatan lomba tarik tambang yang diadakan diacara sekolah</p>
-          </div>
-          <div class="flex flex-col">
-            <img src="./images/pameran.png" alt="" class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Pameran Teknologi</h3>
-            <p>
-              Pameran alat alat dengan teknologi terbaru agar siswa bisa
-              mengamati
-            </p>
-          </div>
-          <div class="flex flex-col">
-            <img
-              src="./images/kelas_menggambar.png"
-              alt=""
-              class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Kelas Menggambar</h3>
-            <p>Kelas agar siswa bisa mengembangkan kemampuan non akademik</p>
-          </div>
-          <div class="flex flex-col">
-            <img src="./images/tugas_kelompok.png" alt="" class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Tugas Kelompok</h3>
-            <p>Selain tugas individu, kami juga memberikan tugas kelompok</p>
-          </div>
-          <div class="flex flex-col">
-            <img
-              src="./images/belajar_bermain.png"
-              alt=""
-              class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Belajar dan Bermain</h3>
-            <p>
-              Agar siswa tidak jenuh, kami menerapkan metode belajar dan bermain
-            </p>
-          </div>
-          <div class="flex flex-col">
-            <img
-              src="./images/tamasya_sekolah.png"
-              alt=""
-              class="h-auto mb-5" />
-            <h3 class="subheading-md text-blue-black">Tamasya Sekolah</h3>
-            <p>Tamasya bersama agar siswa lebih akrab dan tidak jenuh</p>
-          </div>
+      <!-- card list -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20 mt-10">
+        <div class="flex flex-col">
+          <img src="./images/kelas.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Ruang Kelas</h3>
+          <p>Ruangan yang digunakan untuk proses belajar mengajar</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/halaman.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Halaman Sekolah</h3>
+          <p>Halaman tempat siswa dapat bermain dan berkumpul</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/lorong.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Lorong Sekolah</h3>
+          <p>Lorong sekolah sebagai jalan penghubung antar kelas</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/belajar.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Belajar Mengajar</h3>
+          <p>Kegiatan belajar mengajar yang dilakukan di dalam kelas</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/kelas_inggris.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Kelas Bahasa Inggris</h3>
+          <p>
+            Kelas bahasa inggris agar siswa bisa lebih fasih berbahasa inggris
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/karya_murid.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Karya Murid</h3>
+          <p>
+            Hasil karya murid dari kelas prakarya yang dikerjakan secara
+            individu dan kelompok
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/tarik tambang.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Lomba Tarik Tambang</h3>
+          <p>Kegiatan lomba tarik tambang yang diadakan diacara sekolah</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/pameran.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Pameran Teknologi</h3>
+          <p>
+            Pameran alat alat dengan teknologi terbaru agar siswa bisa mengamati
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/kelas_menggambar.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Kelas Menggambar</h3>
+          <p>Kelas agar siswa bisa mengembangkan kemampuan non akademik</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/tugas_kelompok.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Tugas Kelompok</h3>
+          <p>Selain tugas individu, kami juga memberikan tugas kelompok</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/belajar_bermain.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Belajar dan Bermain</h3>
+          <p>
+            Agar siswa tidak jenuh, kami menerapkan metode belajar dan bermain
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/tamasya_sekolah.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Tamasya Sekolah</h3>
+          <p>Tamasya bersama agar siswa lebih akrab dan tidak jenuh</p>
         </div>
       </div>
     </section>
+
+    <section class="my-40 md:hidden">
+      <h1 class="text-3xl font-bold md:heading-xl text-center text-blue-black w-full">
+        Dokumentasi Sekolah
+      </h1>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20 mt-10">
+        <div class="flex flex-col">
+          <img src="./images/kelas.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Ruang Kelas</h3>
+          <p>Ruangan yang digunakan untuk proses belajar mengajar</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/halaman.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Halaman Sekolah</h3>
+          <p>Halaman tempat siswa dapat bermain dan berkumpul</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/lorong.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Lorong Sekolah</h3>
+          <p>Lorong sekolah sebagai jalan penghubung antar kelas</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/belajar.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Belajar Mengajar</h3>
+          <p>Kegiatan belajar mengajar yang dilakukan di dalam kelas</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/kelas_inggris.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Kelas Bahasa Inggris</h3>
+          <p>
+            Kelas bahasa inggris agar siswa bisa lebih fasih berbahasa inggris
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/karya_murid.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Karya Murid</h3>
+          <p>
+            Hasil karya murid dari kelas prakarya yang dikerjakan secara
+            individu dan kelompok
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/tarik tambang.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Lomba Tarik Tambang</h3>
+          <p>Kegiatan lomba tarik tambang yang diadakan diacara sekolah</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/pameran.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Pameran Teknologi</h3>
+          <p>
+            Pameran alat alat dengan teknologi terbaru agar siswa bisa mengamati
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/kelas_menggambar.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Kelas Menggambar</h3>
+          <p>Kelas agar siswa bisa mengembangkan kemampuan non akademik</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/tugas_kelompok.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Tugas Kelompok</h3>
+          <p>Selain tugas individu, kami juga memberikan tugas kelompok</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/belajar_bermain.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Belajar dan Bermain</h3>
+          <p>
+            Agar siswa tidak jenuh, kami menerapkan metode belajar dan bermain
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./images/tamasya_sekolah.png" alt="" class="h-auto mb-5" />
+          <h3 class="subheading-md text-blue-black">Tamasya Sekolah</h3>
+          <p>Tamasya bersama agar siswa lebih akrab dan tidak jenuh</p>
+        </div>
+      </div>
+
+      </section>
     <footer class="flex flex-col bg-secondary p-8 md:p-20">
       <div class="flex flex-col md:flex-row w-full">
         <div class="flex-1 mb-8 md:mb-0">
