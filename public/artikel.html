@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <nav
+      class="h-full flex items-center justify-between py-5 px-4 sm:px-8 md:px-10">
+      <div class="image-wrapper">
+        <img
+          src="./images/Vector.png"
+          alt="nav-img"
+          class="w-20 sm:w-24 md:w-auto" />
+      </div>
+
+      <div class="hidden sm:flex space-x-4 md:space-x-7">
+        <a href="index.html" class="hover:text-primary">Beranda</a>
+        <a href="about.html" class="hover:text-primary">Tentang</a>
+        <a href="galeri.html" class="hover:text-primary">Galeri</a>
+        <a href="artikel.html" class="text-primary font-bold">Artikel</a>
+        <a href="kontak.html" class="hover:text-primary">Kontak</a>
+      </div>
+
+      <div>
+        <a
+          href="#"
+          class="border-2 border-black px-3 py-1 sm:px-5 sm:py-2 rounded-full hover:bg-black hover:text-white text-sm sm:text-base"
+          >PPDB</a
+        >
+      </div>
+
+      <div class="sm:hidden">
+        <button id="menu-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- hiden nav -->
+    <div
+      id="mobile-menu"
+      class="hidden sm:hidden bg-white absolute top-0 left-0 w-full shadow-md z-10">
+      <div class="flex justify-between items-center p-4">
+        <div class="font-bold text-xl">Menu</div>
+        <button id="close-menu" class="text-xl">X</button>
+      </div>
+      <div class="flex flex-col items-center py-4">
+        <a href="index.html" class="hover:text-primary py-2">Beranda</a>
+        <a href="about.html" class="hover:text-primary py-2">Tentang</a>
+        <a href="galeri.html" class="hover:text-primary py-2">Galeri</a>
+        <a href="artikel.html" class="text-primary font-bold py-2">Artikel</a>
+        <a href="kontak.html" class="hover:text-primary py-2">Kontak</a>
+      </div>
+    </div>
+
+    <section
+      class="flex flex-col justify-between md:flex-row items-center my-20 w-full">
+      <div class="flex flex-col items-start justify-center md:w-1/2 pr-4 mt-1">
+        <h1 class="font-extrabold text-5xl md:text-[56px] leading-snug">
+          Artikel Pendidikan
+        </h1>
+        <p class="mt-2 text-[20px]">
+          Beberapa bacaan menarik seputar pendidikan yang bisa anda baca dan
+          nikmati secara gratis
+        </p>
+      </div>
+
+      <div class="flex flex-col items-end justify-start md:w-1/2">
+        <img
+          src="./images/artikel_hero.png"
+          alt="img"
+          class="max-w-full h-auto"
+          style="max-height: 500px" />
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="hidden md:flex flex-col p-15 rounded-2xl text-center font-semibold text-2xl mt-4 text-blue-black shadow-round">
+        <div class="w-full mb-10">
+          <h1 class="heading-xl text-blue-black mb-10">
+            Artikel Pendidikan Terbaru
+          </h1>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-10">
+          <img
+            src="./images/kelas.png"
+            alt=""
+            class="h-auto max-w-full lg:w-1/2" />
+
+          <div class="flex flex-col w-full text-start lg:w-1/2">
+            <p class="caption-img mb-1 text-gray-500">16 Januari 2022</p>
+            <h3 class="article-heading mb-4">
+              Gotong Royong di Sekolah, Bantu Anak Segera Kembali ke Sekolah
+            </h3>
+
+            <p class="subheading-sm text-justify mb-3">
+              Jika anak kita ditanya apa mimpinya pasti jawabnya saya ingin
+              kembali belajar di sekolah. Saya ingin bertemu dengan teman-teman
+              sekelas saya. Begitupun sebagian besar orang tua, mimpi mereka
+              adalah melihat anaknya kembali ke aktivitas sekolah secara
+              langsung. Orang tua selama ini banyak yang mengaku lelah karena
+              anak-anaknya selama pandemi lebih . . .
+            </p>
+            <p class="caption-img text-gray-500">Penulis : Shinta A.P</p>
+            <a href="#" class="mt-5 text-sm btn-primary"> Baca Selengkapnya </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Div untuk SM (tanpa shadow) -->
+      <div class="block md:hidden w-full">
+        <h1 class="heading-xl text-blue-black mb-10 text-center">
+          Artikel Pendidikan Terbaru
+        </h1>
+
+        <div class="flex flex-col gap-10">
+          <img src="./images/kelas.png" alt="" class="h-auto w-full" />
+
+          <div class="flex flex-col w-full text-start">
+            <p class="caption-img mb-1">16 Januari 2022</p>
+            <h3 class="article-heading mb-4">
+              Gotong Royong di Sekolah, Bantu Anak Segera Kembali ke Sekolah
+            </h3>
+
+            <p class="subheading-sm text-justify mb-3">
+              Jika anak kita ditanya apa mimpinya pasti jawabnya saya ingin
+              kembali belajar di sekolah. Saya ingin bertemu dengan teman-teman
+              sekelas saya. Begitupun sebagian besar orang tua, mimpi mereka
+              adalah melihat anaknya kembali ke aktivitas sekolah secara
+              langsung. Orang tua selama ini banyak yang mengaku lelah karena
+              anak-anaknya selama pandemi lebih . . .
+            </p>
+            <p class="caption-img text-gray-500">Penulis : Shinta A.P</p>
+            <a href="#" class="mt-5 text-sm btn-primary">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full h-auto my-40">
+      <!-- card list -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-10 mt-10">
+        <!-- card item row 1 -->
+        <div class="flex flex-col shadow-round rounded-2xl justify-between">
+          <div class="flex-col p-5">
+            <img
+              src="./images/teknik_belajar.png"
+              alt="artikel_img"
+              class="h-auto rounded-2xl mb-3" />
+            <p class="caption-img text-gray-500">12 Desember 2021</p>
+            <h3 class="title-img text-blue-black">
+              Teknik Belajar Tepat Agar Anak Tak Mudah Bosan
+            </h3>
+          </div>
+          <div
+            class="bg-[#6950bb] flex flex-row items-center justify-between px-5 py-5 text-sm rounded-b-2xl font-semibold">
+            <p class="text-white">Baca Selengkapnya</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="flex flex-col shadow-round rounded-2xl justify-between">
+          <div class="flex-col p-4">
+            <img
+              src="./images/metode_tanya.png"
+              alt="artikel_img"
+              class="h-auto rounded-2xl mb-3" />
+            <p class="caption-img text-gray-500">12 Desember 2021</p>
+            <h3 class="title-img text-blue-black">
+              Metode Tanya Jawab Untuk Evaluasi Materi Di Sekolah
+            </h3>
+          </div>
+          <div
+            class="bg-[#f9bb50] flex flex-row items-center justify-between px-5 py-5 text-sm rounded-b-2xl font-semibold">
+            <p class="text-white">Baca Selengkapnya</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="flex flex-col shadow-round rounded-2xl justify-between">
+          <div class="flex-col p-4">
+            <img
+              src="./images/berlibur.png"
+              alt="artikel_img"
+              class="h-auto rounded-2xl mb-3" />
+            <p class="caption-img text-gray-500">12 Desember 2021</p>
+            <h3 class="title-img text-blue-black">
+              Berlibur Bersama Agar Anak Tidak Jenuh
+            </h3>
+          </div>
+          <div
+            class="bg-[#ed69cf] flex flex-row items-center justify-between px-5 py-5 text-sm rounded-b-2xl font-semibold">
+            <p class="text-white">Baca Selengkapnya</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+        <!-- card item row 2 -->
+        <div class="flex flex-col shadow-round rounded-2xl justify-between">
+          <div class="flex-col p-5">
+            <img
+              src="./images/gotong_royong.png"
+              alt="artikel_img"
+              class="h-auto rounded-2xl mb-3" />
+            <p class="caption-img text-gray-500">12 Desember 2021</p>
+            <h3 class="title-img text-blue-black">
+              Gotong Royong di Sekolah, Bantu Anak Segera Kembali ke Sekolah
+            </h3>
+          </div>
+          <div
+            class="bg-[#6950bb] flex flex-row items-center justify-between px-5 py-5 text-sm rounded-b-2xl font-semibold">
+            <p class="text-white">Baca Selengkapnya</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="flex flex-col shadow-round rounded-2xl justify-between">
+          <div class="flex-col p-4">
+            <img
+              src="./images/permainan.png"
+              alt="artikel_img"
+              class="h-auto rounded-2xl mb-3" />
+            <p class="caption-img text-gray-500">12 Desember 2021</p>
+            <h3 class="title-img text-blue-black">
+              Permainan Yang Bagus Untuk Perkembangan Anak
+            </h3>
+          </div>
+          <div
+            class="bg-[#f9bb50] flex flex-row items-center justify-between px-5 py-5 text-sm rounded-b-2xl font-semibold">
+            <p class="text-white">Baca Selengkapnya</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="flex flex-col shadow-round rounded-2xl justify-between">
+          <div class="flex-col p-4">
+            <img
+              src="./images/di_sekolah_belajar.png"
+              alt="artikel_img"
+              class="h-auto rounded-2xl mb-3" />
+            <p class="caption-img text-gray-500">12 Desember 2021</p>
+            <h3 class="title-img text-blue-black">
+              Di Sekolah Belajar, Di Rumah pun Apakah Harus Belajar?
+            </h3>
+          </div>
+          <div
+            class="bg-[#ed69cf] flex flex-row items-center justify-between px-5 py-5 text-sm rounded-b-2xl font-semibold">
+            <p class="text-white">Baca Selengkapnya</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+        <!-- card item row 3 -->
+        <div class="flex flex-col shadow-round rounded-2xl justify-between">
+          <div class="flex-col p-5">
+            <img
+              src="./images/tetap_menjaga_kesehatan.png"
+              alt="artikel_img"
+              class="h-auto rounded-2xl mb-3" />
+            <p class="caption-img text-gray-500">12 Desember 2021</p>
+            <h3 class="title-img text-blue-black">
+              Tetap Menjaga Kesehatan Anak Selama Di Sekolah
+            </h3>
+          </div>
+          <div
+            class="bg-[#6950bb] flex flex-row items-center justify-between px-5 py-5 text-sm rounded-b-2xl font-semibold">
+            <p class="text-white">Baca Selengkapnya</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="flex flex-col shadow-round rounded-2xl justify-between">
+          <div class="flex-col p-4">
+            <img
+              src="./images/mewarnai.png"
+              alt="artikel_img"
+              class="h-auto rounded-2xl mb-3" />
+            <p class="caption-img text-gray-500">12 Desember 2021</p>
+            <h3 class="title-img text-blue-black">
+              Mewarnai Membantu Meningkatkan Kreativitas Anak?
+            </h3>
+          </div>
+          <div
+            class="bg-[#f9bb50] flex flex-row items-center justify-between px-5 py-5 text-sm rounded-b-2xl font-semibold">
+            <p class="text-white">Baca Selengkapnya</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="flex flex-col shadow-round rounded-2xl justify-between">
+          <div class="flex-col p-4">
+            <img
+              src="./images/perlukah_belajar.png"
+              alt="artikel_img"
+              class="h-auto rounded-2xl mb-3" />
+            <p class="caption-img text-gray-500">12 Desember 2021</p>
+            <h3 class="title-img text-blue-black">
+              Perlukah Belajar Menggambar Dan Mewarnai Di Sekolah?
+            </h3>
+          </div>
+          <div
+            class="bg-[#ed69cf] flex flex-row items-center justify-between px-5 py-5 text-sm rounded-b-2xl font-semibold">
+            <p class="text-white">Baca Selengkapnya</p>
+            <ion-icon
+              class="text-white"
+              name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="flex flex-col bg-secondary p-8 md:p-20">
+      <div class="flex flex-col md:flex-row w-full">
+        <div class="flex-1 mb-8 md:mb-0">
+          <div class="flex flex-col">
+            <img
+              src="./images/Vector.png"
+              alt="Vector"
+              class="w-24 md:w-35 h-auto" />
+            <p class="mt-4 md:mt-6 w-full md:w-80 text-sm md:text-base">
+              Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami,
+              untuk kehidupan yang lebih bermanfaat
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-1 flex flex-wrap justify-between">
+          <div class="w-full md:w-auto mb-6 md:mb-0">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Informasi
+              </h3>
+              <a href="" class="text-sm md:text-base">Artikel</a>
+              <a href="" class="text-sm md:text-base">Galeri</a>
+            </div>
+          </div>
+          <div class="w-full md:w-auto mb-6 md:mb-0">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Tentang
+              </h3>
+              <a href="" class="text-sm md:text-base">Tentang Kami</a>
+              <a href="" class="text-sm md:text-base">Hubungi Kami</a>
+            </div>
+          </div>
+          <div class="w-full md:w-auto">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Ikuti Kami
+              </h3>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-facebook"></ion-icon>
+                namasekolah
+              </a>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-linkedin"></ion-icon>
+                namasekolah
+              </a>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-instagram"></ion-icon>
+                namasekolah
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script/script.js"></script>
+</html>
