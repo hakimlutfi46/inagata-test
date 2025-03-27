@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <nav
+      class="h-full flex items-center justify-between py-5 px-4 sm:px-8 md:px-10">
+      <div class="image-wrapper">
+        <img
+          src="./images/Vector.png"
+          alt="nav-img"
+          class="w-20 sm:w-24 md:w-auto" />
+      </div>
+
+      <div class="hidden sm:flex space-x-4 md:space-x-7">
+        <a href="index.html" class="hover:text-primary">Beranda</a>
+        <a href="about.html" class="hover:text-primary">Tentang</a>
+        <a href="galeri.html" class="text-primary font-bold">Galeri</a>
+        <a href="artikel.html" class="hover:text-primary">Artikel</a>
+        <a href="kontak.html" class="hover:text-primary">Kontak</a>
+      </div>
+
+      <div>
+        <a
+          href="#"
+          class="border-2 border-black px-3 py-1 sm:px-5 sm:py-2 rounded-full hover:bg-black hover:text-white text-sm sm:text-base"
+          >PPDB</a
+        >
+      </div>
+
+      <div class="sm:hidden">
+        <button id="menu-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- hiden nav -->
+    <div
+      id="mobile-menu"
+      class="hidden sm:hidden bg-white absolute top-0 left-0 w-full shadow-md z-10">
+      <div class="flex justify-between items-center p-4">
+        <div class="font-bold text-xl">Menu</div>
+        <button id="close-menu" class="text-xl">X</button>
+      </div>
+      <div class="flex flex-col items-center py-4">
+        <a href="index.html" class="hover:text-primary py-2">Beranda</a>
+        <a href="about.html" class="hover:text-primary py-2">Tentang</a>
+        <a href="galeri.html" class="text-primary font-bold py-2">Galeri</a>
+        <a href="artikel.html" class="hover:text-primary py-2">Artikel</a>
+        <a href="kontak.html" class="hover:text-primary py-2">Kontak</a>
+      </div>
+    </div>
+
+    <section
+      class="flex flex-col justify-between md:flex-row items-center my-20 w-full">
+      <div class="flex flex-col items-start justify-center md:w-1/2 pr-4 mt-1">
+        <h1 class="font-extrabold text-5xl md:text-[56px] leading-snug">
+          Galeri
+        </h1>
+        <p class="mt-2 text-[20px]">
+          Beberapa dokumentasi area sekolah dan kegiatan-kegiatan yang diadakan
+          sekolah
+        </p>
+      </div>
+
+      <div class="flex flex-col items-end justify-start md:w-1/2">
+        <img
+          src="./images/galeri_hero.png"
+          alt="img"
+          class="max-w-full h-auto"
+          style="max-height: 500px" />
+      </div>
+    </section>
+
+    <section class="my-40">
+      <div class="flex flex-col p-10 rounded-2xl shadow-round">
+        <h1 class="heading-xl text-center text-blue-black w-full">
+          Dokumentasi Sekolah
+        </h1>
+
+        <!-- card list -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20 mt-10">
+          <div class="flex flex-col">
+            <img src="./images/kelas.png" alt="" class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Ruang Kelas</h3>
+            <p>Ruangan yang digunakan untuk proses belajar mengajar</p>
+          </div>
+          <div class="flex flex-col">
+            <img src="./images/halaman.png" alt="" class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Halaman Sekolah</h3>
+            <p>Halaman tempat siswa dapat bermain dan berkumpul</p>
+          </div>
+          <div class="flex flex-col">
+            <img src="./images/lorong.png" alt="" class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Lorong Sekolah</h3>
+            <p>Lorong sekolah sebagai jalan penghubung antar kelas</p>
+          </div>
+          <div class="flex flex-col">
+            <img src="./images/belajar.png" alt="" class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Belajar Mengajar</h3>
+            <p>Kegiatan belajar mengajar yang dilakukan di dalam kelas</p>
+          </div>
+          <div class="flex flex-col">
+            <img src="./images/kelas_inggris.png" alt="" class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Kelas Bahasa Inggris</h3>
+            <p>
+              Kelas bahasa inggris agar siswa bisa lebih fasih berbahasa inggris
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <img src="./images/karya_murid.png" alt="" class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Karya Murid</h3>
+            <p>
+              Hasil karya murid dari kelas prakarya yang dikerjakan secara
+              individu dan kelompok
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <img src="./images/tarik tambang.png" alt="" class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Lomba Tarik Tambang</h3>
+            <p>Kegiatan lomba tarik tambang yang diadakan diacara sekolah</p>
+          </div>
+          <div class="flex flex-col">
+            <img src="./images/pameran.png" alt="" class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Pameran Teknologi</h3>
+            <p>
+              Pameran alat alat dengan teknologi terbaru agar siswa bisa
+              mengamati
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <img
+              src="./images/kelas_menggambar.png"
+              alt=""
+              class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Kelas Menggambar</h3>
+            <p>Kelas agar siswa bisa mengembangkan kemampuan non akademik</p>
+          </div>
+          <div class="flex flex-col">
+            <img src="./images/tugas_kelompok.png" alt="" class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Tugas Kelompok</h3>
+            <p>Selain tugas individu, kami juga memberikan tugas kelompok</p>
+          </div>
+          <div class="flex flex-col">
+            <img
+              src="./images/belajar_bermain.png"
+              alt=""
+              class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Belajar dan Bermain</h3>
+            <p>
+              Agar siswa tidak jenuh, kami menerapkan metode belajar dan bermain
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <img
+              src="./images/tamasya_sekolah.png"
+              alt=""
+              class="h-auto mb-5" />
+            <h3 class="subheading-md text-blue-black">Tamasya Sekolah</h3>
+            <p>Tamasya bersama agar siswa lebih akrab dan tidak jenuh</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="flex flex-col bg-secondary p-8 md:p-20">
+      <div class="flex flex-col md:flex-row w-full">
+        <div class="flex-1 mb-8 md:mb-0">
+          <div class="flex flex-col">
+            <img
+              src="./images/Vector.png"
+              alt="Vector"
+              class="w-24 md:w-35 h-auto" />
+            <p class="mt-4 md:mt-6 w-full md:w-80 text-sm md:text-base">
+              Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami,
+              untuk kehidupan yang lebih bermanfaat
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-1 flex flex-wrap justify-between">
+          <div class="w-full md:w-auto mb-6 md:mb-0">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Informasi
+              </h3>
+              <a href="" class="text-sm md:text-base">Artikel</a>
+              <a href="" class="text-sm md:text-base">Galeri</a>
+            </div>
+          </div>
+          <div class="w-full md:w-auto mb-6 md:mb-0">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Tentang
+              </h3>
+              <a href="" class="text-sm md:text-base">Tentang Kami</a>
+              <a href="" class="text-sm md:text-base">Hubungi Kami</a>
+            </div>
+          </div>
+          <div class="w-full md:w-auto">
+            <div class="flex flex-col gap-y-4">
+              <h3 class="font-bold text-primary text-lg md:text-2xl">
+                Ikuti Kami
+              </h3>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-facebook"></ion-icon>
+                namasekolah
+              </a>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-linkedin"></ion-icon>
+                namasekolah
+              </a>
+              <a href="" class="flex items-center text-sm md:text-base">
+                <ion-icon
+                  class="text-black mr-2"
+                  name="logo-instagram"></ion-icon>
+                namasekolah
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script/script.js"></script>
+</html>
